@@ -16,6 +16,7 @@ import text2speechImage from './text2speech.png';
 import text2speechInsetImage from './text2speech-small.svg';
 import makeymakeyImage from './makeymakey.png';
 import makeymakeyInsetImage from './makeymakey-small.svg';
+import custom from './custom.png';
 
 import microbitPeripheralImage from './peripheral-connection/microbit/microbit-illustration.svg';
 import microbitMenuImage from './peripheral-connection/microbit/microbit-small.svg';
@@ -26,6 +27,13 @@ import wedoMenuImage from './peripheral-connection/wedo/wedo-small.svg';
 import wedoButtonImage from './peripheral-connection/wedo/wedo-button-illustration.svg';
 
 export default [
+    {
+        name: "Custom extension",
+        iconURL: custom,
+        insetIconURL: custom,
+        description: 'Set your extension URL',
+        featured: true
+    },
     {
         name: (
             <FormattedMessage
@@ -44,13 +52,6 @@ export default [
                 id="gui.extension.music.description"
             />
         ),
-        featured: true
-    },
-    {
-        name: "Myriad API",
-        iconURL: musicImage,
-        insetIconURL: musicInsetImage,
-        description: 'connect myriad app',
         featured: true
     },
     {
