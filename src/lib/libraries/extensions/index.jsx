@@ -47,6 +47,13 @@ export default [
         featured: true
     },
     {
+        name: "Myriad API",
+        iconURL: musicImage,
+        insetIconURL: musicInsetImage,
+        description: 'connect myriad app',
+        featured: true
+    },
+    {
         name: (
             <FormattedMessage
                 defaultMessage="Pen"

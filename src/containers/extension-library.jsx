@@ -31,11 +31,11 @@ class ExtensionLibrary extends React.PureComponent {
         ]);
     }
     handleItemSelect (item) {
-        const id = item.extensionId;
+        let id = item.extensionId;
         let url = item.extensionURL ? item.extensionURL : id;
         if (!item.disabled && !id) {
             // eslint-disable-next-line no-alert
-            url = prompt(this.props.intl.formatMessage(messages.extensionUrl));
+            id = url = prompt(this.props.intl.formatMessage(messages.extensionUrl));
         }
         if (id && !item.disabled) {
             if (this.props.vm.extensionManager.isExtensionLoaded(url)) {
